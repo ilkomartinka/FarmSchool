@@ -8,6 +8,15 @@ public class Farm {
     private ArrayList<Animal> animals;
     private double landArea;
 
+    /**
+     * Constructs a new farmer with default parameters
+     * @param counofFlowers
+     * @param countOfSmallAnimals
+     * @param countOfLargeAnimals
+     * @param flowers
+     * @param animals
+     * @param landArea
+     */
     public Farm(int counofFlowers, int countOfSmallAnimals, int countOfLargeAnimals, ArrayList<Flower> flowers, ArrayList<Animal> animals, int landArea) {
         this.counofFlowers = 5;
         this.countOfSmallAnimals = 10;
@@ -17,6 +26,10 @@ public class Farm {
         this.landArea = 100;
     }
 
+    /**
+     * Method which add flowers
+     * @param flower
+     */
     public void addFlower(Flower flower) {
         if (flower.getNeededArea() < landArea && counofFlowers < 5) {
             flowers.add(flower);
@@ -26,6 +39,10 @@ public class Farm {
         }
     }
 
+    /**
+     * Method for deleting flowers
+     * @param flower
+     */
     public void deleteFlower(Flower flower){
         flowers.remove(flower);
         landArea += flower.getNeededArea();

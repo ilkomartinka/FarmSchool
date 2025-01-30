@@ -22,6 +22,11 @@ public abstract class Flower {
                 '}';
     }
 
+    /**
+     * Waters the plant to increase its growth chance
+     * @param number
+     * @return
+     */
     public abstract double watering(double number);
 
     public double getChanceOfGrowth() {
