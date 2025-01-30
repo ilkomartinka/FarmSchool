@@ -10,6 +10,11 @@ public class Corn extends Flower {
         super(name, price, neededArea, chanceOfGrowth);
     }
 
+    /**
+     * Method for watering
+     * @param number
+     * @return
+     */
     @Override
     public double watering(double number) {
         double chance = 0;
