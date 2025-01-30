@@ -26,4 +26,9 @@ public class Farm {
         }
     }
 
+    public void deleteFlower(Flower flower){
+        flowers.remove(flower);
+        landArea += flower.getNeededArea();
+    }
+
 }
